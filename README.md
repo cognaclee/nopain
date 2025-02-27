@@ -27,6 +27,10 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
     conda env create --file nopain.yaml --name nopain
     # Activate the environment
     conda activate nopain
+
+    # Step 2: Setup the environment for the Pointmamba classifier using the provided YAML file
+    conda env create --file nopain_pointmamba.yaml --name nopain_pointmamba
+    conda activate nopain_pointmamba
     ```
 
 3. Download the datasets and place them in the `data/` directory:
