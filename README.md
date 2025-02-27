@@ -18,7 +18,13 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
     git clone https://github.com/cognaclee/nopain
     cd nopain
     ```
-
+2. Download the datasets and place them in the `data/` directory:
+    ```
+    data/
+    ├── shapenetcore_partanno_segmentation_benchmark/
+    ├── ScanObjectNN/
+    └── modelnet40_normal_resampled/
+    ```
 ## Acknowledgments
 ```
 * https://github.com/cuge1995/SS-attack
