@@ -12,20 +12,33 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
 
 ## Usage
 
+
 1. Clone the repository:
 
     ```bash
     git clone https://github.com/cognaclee/nopain
     cd nopain
     ```
-2. Download the datasets and place them in the `data/` directory:
+
+2. Setup the environment using the provided YAML file:
+
+    ```bash
+    # Create the environment based on nopain.yaml
+    conda env create --file nopain.yaml --name nopain
+    # Activate the environment
+    conda activate nopain
+    ```
+
+3. Download the datasets and place them in the `data/` directory:
+
     ```
     data/
     ├── shapenetcore_partanno_segmentation_benchmark/
     ├── ScanObjectNN/
     └── modelnet40_normal_resampled/
     ```
-3. Download the pre-trained models from the [Google Drive](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `pretrained/` directory:
+
+4. Download the pre-trained models from the [Google Drive](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `pretrained/` directory:
 
     ```bash
     # Create the pretrained directory if it doesn't exist
