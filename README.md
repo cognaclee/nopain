@@ -25,12 +25,12 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
     ├── ScanObjectNN/
     └── modelnet40_normal_resampled/
     ```
-3. Download the pre-trained models from the [Google Drive](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) link and place them in the `pretrained/` directory:
+3. Download the pre-trained models from the [Google Drive](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `pretrained/` directory:
 
     ```bash
     # Create the pretrained directory if it doesn't exist
     mkdir -p pretrained
-    ···
+    ```
 ## Acknowledgments
 ```
 * https://github.com/cuge1995/SS-attack
