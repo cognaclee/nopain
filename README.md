@@ -14,8 +14,8 @@ This repository offers a No-box Point Cloud Attack, capable of efficiently gener
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/cognaclee/DPM-OT
-    cd DPM-OT
+    git clone https://github.com/cognaclee/nopain
+    cd nopain
     ```
 
 ## Acknowledgments
