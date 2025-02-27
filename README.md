@@ -20,8 +20,9 @@ This repository offers a No-box Point Cloud Attack, capable of efficiently gener
 
 ## Acknowledgments
 ```
-* https://github.com/ermongroup/ncsnv2
-* https://github.com/jeonsworld/ViT-pytorch
+* https://github.com/cuge1995/SS-attack
+* https://github.com/luost26/diffusion-point-cloud
+* https://github.com/stevenygd/PointFlow
 ```
 
 
