@@ -60,7 +60,7 @@ This example demonstrates an attack on the ModelNet40 dataset using a point diff
 	```bash
 	# If you want to use a pretrained OT, run the following command
 	# Replace `<your directory>` and `<your_ot.pt>` with your specific paths
-	python "./test_ae_mn40_cd.py" --source_dir results/<your directory>/ --h_name 			results/<yourdirectory>/ot/<your_ot.pt>
+	python "./test_ae_mn40_cd.py" --source_dir results/<your directory>/ --h_name results/<yourdirectory>/ot/<your_ot.pt>
 	```
 3. **Results:**
 The results from Nopain will be saved in the `results/` directory.
