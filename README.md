@@ -9,8 +9,8 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
 
 ## Results
 
-![49_0_adver_xbox.obj_00.png](png/49_0_adver_xbox.obj_00.png)
-![64_31_adver_plant.obj_00.png](png/64_31_adver_plant.obj_00.png)
+![49_0_adver_xbox.obj_00.png](png/piano.png)
+![64_31_adver_plant.obj_00.png](png/airplane.png)
 
 ## Usage
 
