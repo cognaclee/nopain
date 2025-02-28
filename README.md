@@ -50,7 +50,7 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
 	```
 
 ### Run Nopain
-This example demonstrates an attack on the ModelNet40 dataset using a point diffusion-based autoencoder. If your target is a different dataset or architecture, such as PointFlow, please use the corresponding scripts provided in this project.
+This example demonstrates an attack on the ModelNet40 dataset using a point diffusion-based autoencoder. If your target is a different dataset or architecture, please use the corresponding scripts provided in this project.
 1. **Extract Features and Run Test Script:**
 	```bash
 	# The first time you run Nopain, use the following command to extract features
