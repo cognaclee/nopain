@@ -48,6 +48,16 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
     # Create the pretrained directory if it doesn't exist
     mkdir -p pretrained
     ```
+5. Launch Nopain with the following command to start the test script:
+
+    ```bash
+    # The first time you run Nopain, use the following command to extract features
+    python "./test_ae_mn40_cd.py" --extract_feature
+    # The results from Nopain will be saved in the `results/` directory,If you want to use a pre-trained OT, run the following command
+    # You would replace `<your directory>` and `<your_ot.pt>` with your specific paths
+    python "./test_ae_mn40_cd.py" --source_dir results/<your directory>/ --h_name results/<your directory>/ot/<your_ot.pt>
+    ```
+
 ## Acknowledgments
 ```
 * https://github.com/cuge1995/SS-attack
