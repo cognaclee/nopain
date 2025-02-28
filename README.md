@@ -33,7 +33,7 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
 	conda activate nopain_pointmamba
 	```
 
-###Prepare Data and Models
+### Prepare Data and Models
 
 1. **Download the datasets and place them in the `data/` directory:**
 
@@ -49,7 +49,7 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
 	mkdir -p pretrained
 	```
 
-###Run Nopain
+### Run Nopain
 This example demonstrates an attack on the ModelNet40 dataset using a point diffusion-based autoencoder. If your target is a different dataset or architecture, such as PointFlow, please use the corresponding scripts provided in this project.
 1. **Extract Features and Run Test Script:**
 	```bash
