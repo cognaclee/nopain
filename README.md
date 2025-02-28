@@ -12,52 +12,58 @@ Adversarial attacks exploit the vulnerability of deep models against adversarial
 
 ## Usage
 
+### Setup Environment
 
-1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/cognaclee/nopain
-    cd nopain
-    ```
+1. **Clone the repository and navigate to the project directory:**
 
-2. Setup the environment using the provided YAML file:
+   ```bash
+   git clone https://github.com/cognaclee/nopain
+   cd nopain
+   ```
+2. **Create and activate the environment using the provided YAML file:**
+	```
+	# Create the environment based on nopain.yaml
+	conda env create --file nopain.yaml --name nopain
+	# Activate the environment
+	conda activate nopain
 
-    ```bash
-    # Create the environment based on nopain.yaml
-    conda env create --file nopain.yaml --name nopain
-    # Activate the environment
-    conda activate nopain
+	# Setup the environment for the Pointmamba classifier
+	conda env create --file nopain_pointmamba.yaml --name nopain_pointmamba
+	conda activate nopain_pointmamba
+	```
 
-    # Step 2: Setup the environment for the Pointmamba classifier using the provided YAML file
-    conda env create --file nopain_pointmamba.yaml --name nopain_pointmamba
-    conda activate nopain_pointmamba
-    ```
+###Prepare Data and Models
 
-3. Download the datasets and place them in the `data/` directory:
+1. **Download the datasets and place them in the `data/` directory:**
 
-    ```
-    data/
-    ├── shapenetcore_partanno_segmentation_benchmark/
-    ├── ScanObjectNN/
-    └── modelnet40_normal_resampled/
-    ```
+	```
+	data/
+	├── shapenetcore_partanno_segmentation_benchmark/
+	├── ScanObjectNN/
+	└── modelnet40_normal_resampled/
+	```
+2. **Download the [pretrained models](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `pretrained/` directory:**
+	```
+	# Create the pretrained directory if it doesn't exist
+	mkdir -p pretrained
+	```
 
-4. Download the pre-trained models from the [Google Drive](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `pretrained/` directory:
-
-    ```bash
-    # Create the pretrained directory if it doesn't exist
-    mkdir -p pretrained
-    ```
-5. Launch Nopain with the following command to start the test script:
-
-    ```bash
-    # The first time you run Nopain, use the following command to extract features
-    python "./test_ae_mn40_cd.py" --extract_feature
-    # The results from Nopain will be saved in the `results/` directory,If you want to use a pre-trained OT, run the following command
-    # You would replace `<your directory>` and `<your_ot.pt>` with your specific paths
-    python "./test_ae_mn40_cd.py" --source_dir results/<your directory>/ --h_name results/<your directory>/ot/<your_ot.pt>
-    ```
-
+###Run Nopain
+This example demonstrates an attack on the ModelNet40 dataset using a point diffusion-based autoencoder. If your target is a different dataset or architecture, such as PointFlow, please use the corresponding scripts provided in this project.
+1. **Extract Features and Run Test Script:**
+	```bash
+	# The first time you run Nopain, use the following command to extract features
+	python test_ae_mn40_cd.py --extract_feature
+	```
+2. **Use Pretrained OT:**
+	```bash
+	# If you want to use a pretrained OT, run the following command
+	# Replace `<your directory>` and `<your_ot.pt>` with your specific paths
+	python "./test_ae_mn40_cd.py" --source_dir results/<your directory>/ --h_name 			results/<yourdirectory>/ot/<your_ot.pt>
+	```
+3. **Results:**
+The results from Nopain will be saved in the `results/` directory.
 ## Acknowledgments
 ```
 * https://github.com/cuge1995/SS-attack
