@@ -76,5 +76,10 @@ The results from Nopain will be saved in the `results/` directory.
 ## Citation
 
 ```
-
+@inproceedings{li2025nopain,
+  title={NoPain: No-box Point Cloud Attack via Optimal Transport Singular Boundary},
+  author={Li, Zezeng and Du, Xiaoyu and Lei, Na and Chen, Liming and Wang, Weimin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025}
+}
 ```
